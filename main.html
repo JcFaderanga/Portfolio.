@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--------------------------------------------->
+                   <!--ICONS-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!--------------------------------------------->
+  <!--------------------------------------------->
+                   <!--FONTS-->
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap'); 
+  </style>
+  <!--------------------------------------------->
+  <!--------------------------------------------->
+                  <!--MAIN CSS-->
+  <link rel="stylesheet" href="main.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!--------------------------------------------->
+  <!--------------------------------------------->
+               <!--IMPORT SCRIPT-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!--------------------------------------------->
+  
+<body>
+      <div class="navbar" id="navbar">
+        <div class="logo1" >
+                <a id="mode" href="#"><i class='bx bxs-moon'></i></a>
+              </div>
+          <div class="logo">
+            <h2>Jc Faderanga</h2>
+          </div>
+          <div class="humber-container">
+              <div class="humber" id="lines">
+                 <div class="line"></div>
+                 <div class="line"></div>
+                 <div class="line"></div>   
+              </div>
+          </div>
+        <nav class="nav-content"> </nav>
+          <ul>
+            <a href="#" id="exit-btn">x</a>
+            <li id="li-home">
+              <a href="#" id="home"><i class='bx bx-home'></i>Home</a>
+            </li>
+
+            <li id="li-profile">
+              <a href="#" id="profile"><i class='bx bx-user'></i>About me</a>
+            </li>
+
+            <li id="li-studies">
+              <a href="#" id="studies" ><i class='bx bx-book-bookmark'></i>Skills</a>
+            </li>
+
+            <li id="li-message">
+              <a href="#" id="message" ><i class='bx bx-chat'></i>Contact</a>
+            </li>
+          </ul>
+      </div>    
+  <div class="container" id="container">
+<!--
+    <div class="Contact-bubble">
+      <a href=""><i class='bx bxs-message-square-detail' ></i></a>
+    </div>
+  -->
+    <div class="content-profile">
+      <div class="profile-name">
+         <h1> JC Faderanga</h1>
+      </div>
+      <div class="description">
+         <span>Aspiring <span style="font-weight: 700">Web Developer</span> from Philippines</span>
+      </div>
+      <div class="socmed-btn">
+          <ul>
+               <li>
+                 <a href="https://www.facebook.com/janreycyril.faderanga"> <i class='bx bxl-facebook-circle' ></i> </a>
+              </li>
+              <li>
+                 <a href="https://github.com/JcFaderanga"> <i class='bx bxl-instagram-alt'></i> </a>
+              </li>
+              <li>
+                 <a href="https://www.instagram.com/jeysi_faderanga/"> <i class='bx bxl-github'></i> </a>
+              </li>
+          </ul>
+      </div>
+    </div>
+  <!--------------------------------------------->
+             <!-- === About ME === -->
+  <!--------------------------------------------->
+  <div class="about-me">
+    <div class="profile">
+        <img src="profile2.jpg" class="profile-pic">
+        <h2>ABOUT ME</h2>
+        <p>Hello! Im Jc Faderanga an aspiring Web Developer and Software Engineer. I love and enjoy coding so much. This in not about coding this is about life. </p>
+      </div>
+  </div>
+
+
+	
+</div>
+<div class="pc-message" style="display: none;">
+  <h1> HINDI PA PO TAPOS DESIGN SA PC WAIT KALANG PO TY..... </h1>
+</div>
+<script>
+
+const burger=document.querySelector('.humber-container');
+burger.addEventListener('click', () =>{
+  document.querySelector('ul').classList.toggle('active');
+  document.querySelector('.nav-content').classList.toggle('active');
+  document.querySelector('.content-profile').style.animation="none";
+});
+
+
+document.querySelector('.nav-content').addEventListener('click', ()=>{
+document.querySelector('ul').classList.toggle('active');
+document.querySelector('.nav-content').classList.toggle('active');
+});
+
+const home =document.querySelector('#home');
+const profile =document.querySelector('#profile');
+
+home.addEventListener('click', function(){
+document.querySelector('.logo').style.display="none";
+document.querySelector('.content-profile').style.display="grid";
+document.querySelector('ul').classList.toggle('active');
+document.querySelector('.nav-content').classList.toggle('active');
+document.querySelector('.content-profile').style.animation="";
+document.querySelector('.about-me').style.display="none";
+});
+profile.addEventListener('click', function(){
+document.querySelector('ul').classList.toggle('active');
+document.querySelector('.nav-content').classList.toggle('active');
+document.querySelector('.content-profile').style.display="none";
+document.querySelector('.logo').style.display="flex";
+document.querySelector('.about-me').style.display="flex";
+});
+
+</script>
+</body>
+</html>
