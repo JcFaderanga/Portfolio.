@@ -294,7 +294,7 @@ color: #323232;
 	display: grid;
 	grid-template-columns: 
 	margin-top: 50px;
-	margin: 50px 20px 0 20px;
+	margin: 25px 20px 0 20px;
 	justify-content: center;
 }
 .profile .about-me-title{
@@ -466,7 +466,7 @@ color: #323223;
 	display: grid;
 	grid-template-columns: 
 	margin-top: 50px;
-	margin: 50px 20px 0 20px;
+	margin: 25px 20px 0 20px;
 	justify-content: center;
 }
 	
