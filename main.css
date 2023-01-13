@@ -2,7 +2,7 @@
 	--main-colors: #333;
 
 }
-
+/**
 @media only screen and (min-width: 800px){
 	.container{
 		visibility: hidden;
@@ -16,10 +16,12 @@
 		display: flex !important;
 		position: absolute;
 		top: 0;
+
 		margin:0 10%;
 		text-align: center;
 	}
 }
+**/
 html{
 	scroll-behavior: smooth;
 }
@@ -30,6 +32,7 @@ html{
 	text-decoration: none;
 	list-style: none;
 }
+
 /***************************************************/
                    /* NAV BAR */
 /***************************************************/
@@ -55,9 +58,21 @@ width: 70px;
 	justify-content: space-between;
 	top: 0;
 	background: white;
+	transition:  1s ease;
 	
-
 }
+.scroll-down .navbar{
+		transform: translate3d(0, -100%, 0);
+		
+
+	}
+
+.scroll-up .navbar{
+		filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
+		display: flex;
+	justify-content: space-between;
+	}
+
 .nav-content{
 	position: absolute;
 	background: rgba(51,51,51,.18);
@@ -124,8 +139,8 @@ align-items: center;
                    /* BODY */
 /***************************************************/
 .container{
-	
-	margin-top: 50px;
+	max-width: 1000px;
+	margin: 50px auto;
 	width: 100%;
 	height: calc(100vh - 50px);
 	display: flex;
@@ -578,9 +593,15 @@ display: none;
 }
 
 .services-content{
-	display: grid;
 	width: auto;
 	margin: 25px 20px 0 20px;
+}
+.flex-wrap-services{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
 }
 .services-content .services-title{
 display: flex;
@@ -622,15 +643,20 @@ background: var(--main-colors);
 .services-detail{
 	margin: 20px 0;
 	border-radius: 5px;
-	width: 100%;
+	width: 320px;
 	display: grid;
 	text-align: center;
 	height: 300px;
 	box-shadow: rgb(14 30 37 / 12%) 0px 2px 4px 0px, rgb(14 30 37 / 32%) 0px 2px 16px 0px;
 }
+@media(min-width:400px){
+	.services-detail{
+		margin: 20px;
+	}
+}
 .services-items{
 	background: #1f1f1f;
-	height: 100%;
+	height: 130px;
 	width: 100%;
 	display: flex;
 	color: white;
@@ -655,7 +681,7 @@ background: var(--main-colors);
 	align-items: center;
 }
 .services-detail p{
-	margin: 30px 20px 0 20px ;
+	margin: 0 20px ;
 }
 /***************************************************/
                   /* PROJECTS */
