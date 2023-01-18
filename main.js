@@ -41,7 +41,8 @@ document.querySelector('.logo').style.display="none";
 document.querySelector('.content-profile').style.display="grid";
 document.querySelector('.content-profile').style.animation="";
 document.querySelector('.about-me').style.display="none";
-document.querySelector('.resume').style.display="none";
+document.querySelector('.contact').style.display="none";
+document.querySelector('.projects').style.display="none";
 });
 
 /** NAVBAR BOTTONS **/

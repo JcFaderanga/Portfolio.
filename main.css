@@ -528,7 +528,8 @@ font-size: 15px;
 	color: #121212;
 	background: #fafafa;
 	text-align: center;
-	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+	rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 	display: flex;
 	border-radius: 3px;
 	justify-content: center;
@@ -819,7 +820,7 @@ display: none;
 .error{
 	margin: 20px 0 10px 0;
 	width: 100%;
-	height: 70px;
+	height: 50px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
