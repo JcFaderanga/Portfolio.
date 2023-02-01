@@ -1,4 +1,4 @@
-
+alert("PC Responsiveness is not done yet, max-width 700px, recommended width 365px - 500px");
 /** NAVBAR WHEN SROLL **/
   const body = document.body;
 let lastScroll = 0;
